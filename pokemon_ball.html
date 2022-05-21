@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="pokemon_ball.css">
+	<script src="pokemon_ball.js"></script>
+	<title>Pokemon_Ball</title>
+</head>
+<body>
+	<div id="content">
+		<div class="layout" id="intro">
+			<div id="intro_title">
+				<img src="title.jpg">
+			</div>
+			<div id="intro_button">
+				<div class="intro_buttons" id="game_start_button">
+					게임 시작
+				</div>
+				<div class="intro_buttons" id="setting_button">
+					옵션
+				</div>
+				<div class="intro_buttons" id="how_button">
+					게임 설명
+				</div>
+			</div>	
+			<div id="tag">
+				Developed by TeamNine
+			</div>
+		</div>
+		<div class="layout" id="setting">
+			<div class="close_button">
+				<img src="close_button.jpg">
+			</div>
+			<h2>옵션</h2>
+			<div class="option">
+				<div class="bgm_option">
+					<h2>BGM</h2>
+					<div class="sound_option_item" id="sound_off">off</div>
+					<div class="sound_option_item" id="sound_on">on</div>
+				</div>
+				<div class="theme_option">
+					<h2>Theme</h2>
+					<div class="theme_option_item" id="bg1">bg1</div>
+					<div class="theme_option_item" id="bg2">bg2</div>
+					<div class="theme_option_item" id="bg3">bg3</div>
+				</div>
+			</div>
+		</div>
+		<div class="layout" id="game_start">
+			<div id="start_pokemon">
+				<img src="fire.png">	
+				<img src="grass.png">
+				<img src="water.png">
+			</div>
+			<div id="start_menu">
+				<div class="start_menu_item">
+					Professor
+				</div>
+				<div class="start_menu_item">
+					Easy
+				</div>
+				<div class="start_menu_item">
+					Normal
+				</div>
+				<div class="start_menu_item">
+					Hard
+				</div>
+			</div>
+			<div id="pre_button"><img src="pre_button.png"></div>
+			<div id="select_button"><img src="select_button.png"></div>
+		</div>
+		<div class="layout" id="how_to_play">
+			<div class="close_button">
+				<img src="close_button.jpg">
+			</div>
+			<h2>게임 설명</h2>
+			<p>
+				이 게임은 포켓몬 빵에 갇힌 포켓몬 친구들을 구하기 위해<br>
+				모험을 떠나는 게임입니다.<br>
+				각 스타팅 포켓몬 별 능력을 확인한 후 모험을 시작하세요.
+			</p>
+			<div id="descript_pokemon">
+				<img src="fire.png">
+				<img src="grass.png">
+				<img src="water.png">
+			</div>
+			<div id="descript">
+				<div class="close_button2">
+					<img src="close_button.jpg">
+				</div>
+				<div id="descript_img">
+					<img src="fire_descript.jpg">
+					<img src="grass_descript.jpg">
+					<img src="water_descript.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="layout" id="game_stage">
+			<div class="top_area">
+				<div class="top_area_elem score" id="score_sum">SCORE : 0</div>
+				<div class="top_area_elem game_title"><img src="title.jpg"></div>
+				<div class="top_area_elem life"></div>
+			</div>
+			<div id="map">
+				<div class="map_points" id="map_point1"><img src="stage_point.png"></div>
+				<div class="map_points" id="map_point2"><img src="stage_point.png"></div>
+				<div class="map_points" id="map_point3"><img src="stage_point.png"></div>
+				<div class="map_points" id="map_point4"><img src="stage_point.png"></div>
+				<div class="map_points" id="map_point5"><img src="stage_point.png"></div>
+				<div class="map_points" id="map_point6"><img src="stage_point.png"></div>
+				<div class="map_points" id="map_point7"><img src="stage_point.png"></div>
+				<div class="map_points" id="map_point8"><img src="stage_point.png"></div>
+				<div class="map_images" id="map_image1"><img src="conv_cu.png"></div>
+				<div class="map_images" id="map_image2"><img src="conv_gs.png"></div>
+				<div class="map_images" id="map_image3"><img src="conv_711.png"></div>
+				<div class="map_images" id="map_image4"><img src="boss1_shadow.png"></div>
+				<div class="map_images" id="map_image5"><img src="conv_711.png"></div>
+				<div class="map_images" id="map_image6"><img src="conv_cu.png"></div>
+				<div class="map_images" id="map_image7"><img src="conv_gs.png"></div>
+				<div class="map_images" id="map_image8"><img src="boss2_shadow.png"></div>
+			</div>
+		</div>
+		<div class="layout" id="game_play">
+			<div class="top_area">
+				<div class="top_area_elem score">SCORE : 0</div>
+				<div class="top_area_elem game_title"><img src="title.jpg"></div>
+				<img class="top_area_elem" id="time_img"src="TIME.png">
+				<div class="top_area_elem" id="time"> :</div>
+				<div class="top_area_elem life"></div>
+			</div>
+			<canvas id="myCanvas" width="960px" height="490px"></canvas>
+			<div id="bottom_area"></div>
+		</div>	
+	</div>
+</body>
+</html>

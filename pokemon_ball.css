@@ -1,0 +1,414 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 960px;
+	margin: 0 auto;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	border: 0;
+}
+
+.layout {
+	display: none;
+	width: 960px;
+	height: 600px;
+}
+#intro {
+	background-image: url("intro_background.jpg");
+}
+/**/
+#intro_title {
+	position: absolute;
+	width: 400px;
+	height: 190px;
+	top: 0px;
+	right: 0px;
+}
+/**/
+#intro_button {
+	position: absolute;
+	left: 50px;
+	bottom: 35px;
+}
+/**/
+.intro_buttons {
+	width: 172px;
+	height: 60px;
+	margin-bottom: 5px;
+	text-align: center;
+	line-height: 60px;
+	background-color: #806001;
+	color: white;
+	border-radius: 10px;
+	font-size: 20px;
+}
+/**/
+#tag {
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+	font-size: 20px;
+}
+#content {
+	margin-top: 30px;
+	position: relative;
+	width: 960px;
+	height: 600px;
+	background-color: white;
+	border: 1px solid black;
+}
+/*c*/
+.popup {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: white;
+	z-index: 1;
+	width: 700px;
+	height: 500px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+.popup > h2 {
+	margin: 40px 0;
+}
+
+.option {
+	width: 500px;
+	height: 301px;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+.option > div {
+	width: 500px;
+	height: 130px;
+	padding: 10px 0;
+}
+.option > div:first-child {
+	border-bottom: 1px solid black;
+}
+
+.sound_option_item {
+	display: inline-block;
+	width: 80px;
+	height: 50px;
+	border: 1px solid black;
+	margin: 20px 50px;
+}
+
+.theme_option_item {
+	display: inline-block;
+	width: 80px;
+	height: 50px;
+	border: 1px solid black;
+	margin: 20px 30px;
+}
+
+.close_button, .close_button2 {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.close_button img, .close_button2 img {
+	width: 60px;
+	height: 60px;
+}
+#descript, #descript_img, #descript_img img{
+	display: none;
+	width: 400px;
+	height: 560px;
+}
+
+#how_to_play > p {
+	margin: 30px 0;
+}
+#descript_pokemon img {
+	display: inline-block;
+	margin: 30px 30px;
+	width: 120px;
+	height: 120px;
+}
+
+#descript_pokemon img:hover {
+	width: 140px;
+	height: 140px;
+	margin: 20px 20px;
+}
+
+.popup2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 400px;
+	height: 560px;
+	background-color: white;
+	border: 1px solid black;
+	z-index: 2;
+	text-align: center;
+}
+/*c*/
+
+/**/
+#start_pokemon {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	width: 860px;
+	height: 260px;
+	background-color: white;
+	text-align: center;
+}
+#start_title {
+
+}
+
+/**/
+#start_pokemon img {
+	display: block;
+	float: left;
+	margin: 31px 31px 0 31px;
+	width: 223px;
+	height: 223px;
+}
+/**/
+#start_pokemon img:hover {
+	width: 250px;
+	height: 250px;
+	margin: 13px 22px 0px 13px;
+}
+/**/
+#start_menu {
+	position: absolute;
+	bottom: 100px;
+	left: 24px;
+	width: 920px;
+	height: 100px;
+	background-color: white;
+}
+/**/
+.start_menu_item {
+	float: left;
+	width: 206px;
+	height: 73px;
+	margin: 10px 10px;
+	border: 1px solid black;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 73px;
+	font-size: 24px;
+	background-color: #E7E6E6;
+}
+
+#pre_button {
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+}
+/**/
+#pre_button img {
+	width: 205px;
+	height: 65px;
+}
+
+#select_button {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+}
+/**/
+#select_button img {
+	width: 205px;
+	height: 65px;
+}
+/**/
+.top_area {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 960px;
+	height: 69px;
+	border-bottom: 1px solid black;
+}
+/**/
+.top_area_elem{
+	float: left;
+	width: 389px;
+	height: 69px;
+	line-height: 69px;
+	font-size: 30px;
+}
+/**/
+.score {
+	text-align: left;
+	padding-left: 20px;
+}
+/**/
+.game_title {
+	width: 142px;
+}
+/**/
+.game_title img{
+	width: 142px;
+	height: 69px;
+}
+/**/
+#time_img{
+	padding: 14px 10px 15px 10px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+}
+#time{
+	width: 95px;
+	height: 69px;
+	line-height: 69px;
+}
+/**/
+#time + div {/*life를 의미*/
+	width: 234px;
+}
+/**/
+.life {
+	text-align: right;
+	padding-right: 20px;
+	vertical-align: middle;
+	line-height: 69px;
+}
+/**/
+#bottom_area {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 960px;
+	height: 40px;
+	background-image: url("bottom_grass.png");
+}
+#map {
+	position: absolute;
+	top: 70px;
+	left: 0px;
+	width: 960px;
+	height: 530px;
+	background-image: url("map.png");
+}
+/**/
+.map_points, .map_points img{
+	width: 50px;
+	height: 50px;
+}
+/**/
+#map_point1 {
+	position: absolute;
+	top: 60px;
+	left: 150px;
+}
+/**/
+#map_point2 {
+	position: absolute;
+	top: 210px;
+	left: 100px;
+}
+/**/
+#map_point3 {
+	position: absolute;
+	bottom: 120px;
+	left: 250px;
+}
+/**/
+#map_point4 {
+	position: absolute;
+	top: 240px;
+	left: 380px;
+}
+/**/
+#map_point5 {
+	position: absolute;
+	top: 90px;
+	right: 300px;
+}
+/**/
+#map_point6 {
+	position: absolute;
+	top: 250px;
+	right: 50px;
+}
+/**/
+#map_point7 {
+	position: absolute;
+	bottom: 30px;
+	right: 100px;
+}
+/**/
+#map_point8 {
+	position: absolute;
+	bottom: 20px;
+	right: 350px;
+}
+/**/
+.map_images, .map_images img{
+	width: 134px;
+	height: 100px;
+}
+/**/
+#map_image1 {
+	position: absolute;
+	top: 0px;
+	left: 210px;
+}
+/**/
+#map_image2 {
+	position: absolute;
+	top: 120px;
+	left: 0px;
+}
+/**/
+#map_image3 {
+	position: absolute;
+	bottom: 0px;
+	left: 200px;
+}
+/**/
+#map_image4 {
+	position: absolute;
+	top: 200px;
+	left: 450px;
+}
+/**/
+#map_image5 {
+	position: absolute;
+	top: 150px;
+	right: 220px;
+}
+/**/
+#map_image6 {
+	position: absolute;
+	top: 120px;
+	right: 0px;
+}
+/**/
+#map_image7 {
+	position: absolute;
+	bottom: 80px;
+	right: 100px;
+}
+/**/
+#map_image8 {
+	position: absolute;
+	bottom: 90px;
+	right: 300px;
+}
+/**/
+#myCanvas{
+	position: absolute;
+	top: 70px;
+}
